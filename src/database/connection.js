@@ -2,11 +2,12 @@ import sql from 'mssql';
 
 const dbSettings = {
   user: 'sa',
-  password: 'AbrAz0501',
-  server: 'localhost',
+  password: 'Equipo7R6',
+  server: 'pc1.centralus.cloudapp.azure.com',
   database: 'myPark',
-  encrypt: true,
-  trustServerCertificate: true
+  options: {
+    trustServerCertificate: true
+  }
 }
 
 export async function getConnection() {
@@ -17,3 +18,5 @@ export async function getConnection() {
     console.error(error);
   }
 }
+
+export {sql};

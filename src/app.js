@@ -3,7 +3,7 @@ import config from './config'
 import sucursalesRoutes from './routes/sucursales.routes'
 
 const app = express();
-const { port } = config;
+const { port, host } = config;
 
 // settings
 app.set('port', port);
