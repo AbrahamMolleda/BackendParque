@@ -5,9 +5,9 @@ const router = Router();
 
 router.get('/sucursales', getSucursales);
 router.get('/sucursales/:id', getSucursalById);
-router.post('/sucursales', createNewSucursal );
+router.post('/sucursales/create', createNewSucursal );
 router.delete('/sucursales/:id', deleteSucursalById);
-router.put('/sucursales/:id', updateSucursalById);
+router.put('/sucursales/edit/:id', updateSucursalById);
 
 
 export default router;

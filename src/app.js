@@ -1,4 +1,5 @@
 import express from 'express';
+import cors from 'cors';
 import config from './config'
 import sucursalesRoutes from './routes/sucursales.routes'
 
@@ -7,6 +8,8 @@ const { port, host } = config;
 
 // settings
 app.set('port', port);
+
+app.use(cors());
 
 // middlewares
 app.use(express.json());
